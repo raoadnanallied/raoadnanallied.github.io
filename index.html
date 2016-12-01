@@ -13,7 +13,30 @@
   <link href="css/main.css" rel="stylesheet">
   <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
-
+     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script>
+jQuery(document).ready(function() {
+        
+	jQuery('.carousel[data-type="multi"] .item').each(function(){
+		var next = jQuery(this).next();
+		if (!next.length) {
+			next = jQuery(this).siblings(':first');
+		}
+		next.children(':first-child').clone().appendTo(jQuery(this));
+	  
+		for (var i=0;i<2;i++) {
+			next=next.next();
+			if (!next.length) {
+				next = jQuery(this).siblings(':first');
+			}
+			next.children(':first-child').clone().appendTo($(this));
+		}
+	});
+        
+});
+</script>
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -81,7 +104,7 @@
             <li class="scroll"><a href="#Color">Colour</a></li>                     
             <li class="scroll"><a href="#Style">Style</a></li>
             <li class="scroll"><a href="#team">Size</a></li>
-			<li class="scroll"><a href="#team">Payment</a></li>
+			<li class="scroll"><a href="#blog">Payment</a></li>
             <li class="scroll"><a href="#blog">Blog</a></li>
             <li class="scroll"><a href="#contact">Contact</a></li>       
           </ul>
@@ -94,286 +117,221 @@
       <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
         <div class="row">
           <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2>Fabric</h2>   
+            <h2>FABRIC</h2>   
           </div>
         </div> 
       </div>
-      <div class="text-center">
-        <div class="row">
-		 <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-		 </div>
-          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-		  
-<!-- ......Fabric Slider.........-->
+    </div>
+<div class="container text-center">
+<div class="carousel slide row" data-ride="carousel" data-type="multi" data-interval="false" id="febriccarousel">
 
-    <div id="fabric-slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-      <div class="carousel-inner">
+    <div class="carousel-inner">
         <div class="item active">
-		<img class="" src="images/fabric/cloth7.jpg" alt="Card image cap">
-          <div class="caption">
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#Color">Select</a>
-          </div>
+            <div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="card">
+					<a href="#"><img src="images/fabric/cloth8.jpg" class="img-responsive"></a>
+					<div class="card-block">
+						<h4 class="card-title">Denim</h4>
+						<p class="card-text">Export Quality</p>
+					</div>
+						<ul class="list-group list-group-flush">
+						<li class="list-group-item">70% Coton</li>
+						<li class="list-group-item">30% Polyster</li>
+						<li class="list-group-item">Stretchable Fabric</li>
+					</ul>
+					<div class="card-block">
+						<a class="btn btn-primary btn-block" href="#color" role="button">Next</a>
+					</div>
+				</div>
+			</div>
         </div>
-        <div class="item" >
-		<img class="" src="images/fabric/cloth5.jpg" alt="Card image cap">
-          <div class="caption">
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#Color">Select</a>
-          </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="card">
+					<a href="#"><img src="images/fabric/cloth7.jpg" class="img-responsive"></a>
+					<div class="card-block">
+						<h4 class="card-title">Denim</h4>
+						<p class="card-text">Export Quality</p>
+					</div>
+						<ul class="list-group list-group-flush">
+						<li class="list-group-item">70% Coton</li>
+						<li class="list-group-item">30% Polyster</li>
+						<li class="list-group-item">Stretchable Fabric</li>
+					</ul>
+					<div class="card-block">
+						<a class="btn btn-primary btn-block" href="#color" role="button">Next</a>
+					</div>
+				</div>
+			</div>
         </div>
-        <div class="item" >
-		<img class="" src="images/fabric/cloth8.jpg" alt="Card image cap">
-          <div class="caption">
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#Color">Select</a>
-          </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="card">
+					<a href="#"><img src="images/fabric/cloth1.jpg" class="img-responsive"></a>
+					<div class="card-block">
+						<h4 class="card-title">Denim</h4>
+						<p class="card-text">Export Quality</p>
+					</div>
+						<ul class="list-group list-group-flush">
+						<li class="list-group-item">70% Coton</li>
+						<li class="list-group-item">30% Polyster</li>
+						<li class="list-group-item">Stretchable Fabric</li>
+					</ul>
+					<div class="card-block">
+						<a class="btn btn-primary btn-block" href="#color" role="button">Next</a>
+					</div>
+				</div>
+			</div>
         </div>
-      </div>
-      <a class="left-control" href="#fabric-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-      <a class="right-control" href="#fabric-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="card">
+					<a href="#"><img src="images/fabric/cloth8.jpg" class="img-responsive"></a>
+					<div class="card-block">
+						<h4 class="card-title">Denim</h4>
+						<p class="card-text">Export Quality</p>
+					</div>
+						<ul class="list-group list-group-flush">
+						<li class="list-group-item">70% Coton</li>
+						<li class="list-group-item">30% Polyster</li>
+						<li class="list-group-item">Stretchable Fabric</li>
+					</ul>
+					<div class="card-block">
+						<a class="btn btn-primary btn-block" href="#color" role="button">Next</a>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="card">
+					<a href="#"><img src="images/fabric/cloth6.jpg" class="img-responsive"></a>
+					<div class="card-block">
+						<h4 class="card-title">Denim</h4>
+						<p class="card-text">Export Quality</p>
+					</div>
+						<ul class="list-group list-group-flush">
+						<li class="list-group-item">70% Coton</li>
+						<li class="list-group-item">30% Polyster</li>
+						<li class="list-group-item">Stretchable Fabric</li>
+					</ul>
+					<div class="card-block">
+						<a class="btn btn-primary btn-block" href="#color" role="button">Next</a>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="card">
+					<a href="#"><img src="images/fabric/cloth7.jpg" class="img-responsive"></a>
+					<div class="card-block">
+						<h4 class="card-title">Denim</h4>
+						<p class="card-text">Export Quality</p>
+					</div>
+						<ul class="list-group list-group-flush">
+						<li class="list-group-item">70% Coton</li>
+						<li class="list-group-item">30% Polyster</li>
+						<li class="list-group-item">Stretchable Fabric</li>
+					</ul>
+					<div class="card-block">
+						<a class="btn btn-primary btn-block" href="#color" role="button">Next</a>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
 
+    <a class="left carousel-control" href="#febriccarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+    <a class="right carousel-control" href="#febriccarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a> 
 
-    </div><!--/#Fabric-slider-->
-	<!-- ...............-->	  
 </div>
-    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
-    </div>
-    </div>
-    </div>
-    </div>
+</div>
+	<!-- ......End Febric Slider.........-->	 
+
   </section><!--/#febric-->
   
-  <section id="Color" class="parallax">
+  <section id="Color" >
     <div class="container">
-	      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
         <div class="row">
           <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2><font color="black">Colour</font></h2>   
+            <h2>COLOUR</h2>   
           </div>
         </div> 
       </div>
-      <div class="row">
-        <div class="col-sm-4">
-        </div>
-        <div class="col-sm-4">
-	<!-- ......Color Slider.........-->
-
-    <div id="color-slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-      <div class="carousel-inner">
-        <div class="item active">
-		<img class="" src="images/color/color3.jpg" alt="Card image cap">
-          <div class="caption">
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#Style">Select</a>
-          </div>
-        </div>
-        <div class="item" >
-		<img class="" src="images/color/color1.jpg" alt="Card image cap">
-          <div class="caption">
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#Style">Select</a>
-          </div>
-        </div>
-        <div class="item" >
-		<img class="" src="images/color/color2.jpg" alt="Card image cap">
-          <div class="caption">
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#Style">Select</a>
-          </div>
-        </div>
-      </div>
-      <a class="left-control" href="#color-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-      <a class="right-control" href="#color-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
-
-
-    </div><!--/#color-slider-->
-	<!-- ...............-->	 
-        </div>
-      </div>
     </div>
+<div class="container text-center">
+<div class="carousel slide row" data-ride="carousel" data-type="multi" data-interval="false" id="colorscarousel">
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/fabric/cloth1.jpg" class="img-responsive"></a></div>		
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/features-bg.jpg" class="img-responsive"></a></div>		
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/fabric/cloth8.jpg" class="img-responsive"></a></div>		
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/fabric/cloth5.jpg" class="img-responsive"></a></div>	
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/fabric/cloth6.jpg" class="img-responsive"></a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/fabric/cloth7.jpg" class="img-responsive"></a></div>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#colorscarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+    <a class="right carousel-control" href="#colorscarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a> 
+
+</div>
+</div>
   </section><!--/#color-->
 
   <section id="Style">
     <div class="container">
-      <div class="row">
-        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <h2>Style</h2>
-          <p>This is our differents styles</p>
-        </div>
-      </div> 
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/style/style1.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Style 1</h3>
-                    <p>Design, Denim</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/style/style1.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="row">
+          <div class="text-center col-sm-8 col-sm-offset-2">
+            <h2>STYLE</h2>   
           </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/style/style2.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Style 2</h3>
-                    <p>Livi's Style</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/style/style3.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Style 3</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/style/style3.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Time Hours</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="700ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/5.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Time Hours</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="800ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/6.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Time Hours</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="900ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/7.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Time Hours</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="1000ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/8.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Time Hours</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div> 
       </div>
     </div>
-    <div id="portfolio-single-wrap">
-      <div id="portfolio-single">
-      </div>
-    </div><!-- /#portfolio-single-wrap -->
-  </section><!--/#portfolio-->
+<div class="container text-center">
+<div class="carousel slide row" data-ride="carousel" data-type="multi" data-interval="false" id="stylescarousel">
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/fabric/cloth1.jpg" class="img-responsive"></a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/features-bg.jpg" class="img-responsive"></a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/fabric/cloth8.jpg" class="img-responsive"></a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/fabric/cloth5.jpg" class="img-responsive"></a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/fabric/cloth6.jpg" class="img-responsive"></a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="images/fabric/cloth7.jpg" class="img-responsive"></a></div>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#stylescarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+    <a class="right carousel-control" href="#stylescarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a> 
+
+</div>
+</div>
+  </section><!--/#Style-->
 
   <section id="team">
     <div class="container">
