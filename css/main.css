@@ -802,14 +802,26 @@ background-image: url(../images/about-bg.jpg);
 /*************************
 *********Team CSS*********
 **************************/
-#team {
+#size {
   padding-top: 0;
 }
 
-.team-members {
+.size-measure {
+
   margin-bottom: 25px;
 }
-
+.member-image
+{
+	background-image: url(../images/size/size3.jpg);	
+	height: 300px;
+	width: 100%;
+} 
+.waist-measure
+{
+	  margin-top:3%;
+	  margin-left:4%;
+	display: inline-block;
+}
 .social-icons {
   margin-top:30px;
   text-align: center;
@@ -848,25 +860,24 @@ background-image: url(../images/about-bg.jpg);
   transform: scale(1.2);
 }
 
-.team-member {
-  text-align: center;
-  color: #333;
+.size-measure {
+  color: #fff;
   font-size: 14px;
 }
 
-.team-member:hover .social-icons ul li a.facebook {
+.size-measure:hover .social-icons ul li a.facebook {
   background-color: #3b5999;
 }
-.team-member:hover .social-icons ul li a.twitter {
+.size-measure:hover .social-icons ul li a.twitter {
   background-color: #2ac6f7;
 }
-.team-member:hover .social-icons ul li a.dribbble {
+.size-measure:hover .social-icons ul li a.dribbble {
   background-color: #ff5b92;
 }
-.team-member:hover .social-icons ul li a.linkedin {
+.size-measure:hover .social-icons ul li a.linkedin {
   background-color: #036dc0;
 }
-.team-member:hover .social-icons ul li a.rss {
+.size-measure:hover .social-icons ul li a.rss {
   background-color: #ff6b00;
 }
 
