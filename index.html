@@ -345,38 +345,61 @@ jQuery(document).ready(function() {
           <div class="col-sm-6">
             <div class="size-measure wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
               <div class="member-image">
-				<div class="waist">			  
+			  <div class="col-sm-3">
+				<div class="waist" >			  
 					<p class="waist-measure" id="mens-bottom-waist" >Waist</p>
-					<a class="waist-measure btn" href="#">+</a>
-					<a class="waist-measure btn " href="#">-</a>
-					</div>
+					<a class="waist-plus btn" onclick="waistPlus()">+</a>
+					<a class="waist-minus btn " onclick="waistMinus()">-</a>
 				</div>
-
+			</div>
+			<div class="col-sm-3">
+				<div class="seat" >			  
+					<p class="seat-measure" id="mens-bottom-seat" >Seat</p>
+					<a class="seat-plus btn" onclick="seatPlus()">+</a>
+					<a class="seat-minus btn " onclick="seatMinus()">-</a>
 				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="tigh" >			  
+					<p class="tigh-measure" id="mens-bottom-seat" >Tigh</p>
+					<a class="tigh-plus btn" onclick="tighPlus()">+</a>
+					<a class="tigh-minus btn " onclick="tighMinus()">-</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="length">			  
+					<p class="length-measure" id="mens-bottom-seat" >Length</p>
+					<a class="length-plus btn" onclick="lengthPlus()">+</a>
+					<a class="length-minus btn " onclick="lengthMinus()">-</a>
+				</div>
+			</div>
+			   </div>
+			</div>
+		</div>
 		<div class="col-sm-3">
             <div class="size-measure wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">            
 <div class="form-group row">
-  <label for="example-number-input" class="col-xs-2 col-form-label" style="color:black">Waist</label>
+  <label for="waist" class="col-xs-2 col-form-label" style="color:black">Waist</label>
   <div class="col-xs-10">
-    <input class="form-control" type="number" value="42" id="example-number-input">
+    <input class="form-control" type="number" value="42" id="waist">
   </div>
 </div>
 <div class="form-group row">
-  <label for="example-number-input" class="col-xs-2 col-form-label" style="color:black">Seat</label>
+  <label for="seat" class="col-xs-2 col-form-label" style="color:black">Seat</label>
   <div class="col-xs-10">
-    <input class="form-control" type="number" value="42" id="example-number-input">
+    <input class="form-control" type="number" value="42" id="seat">
   </div>
 </div>
 <div class="form-group row">
-  <label for="example-number-input" class="col-xs-2 col-form-label" style="color:black">Tigh</label>
+  <label for="tigh" class="col-xs-2 col-form-label" style="color:black">Tigh</label>
   <div class="col-xs-10">
-    <input class="form-control" type="number" value="42" id="example-number-input">
+    <input class="form-control" type="number" value="42" id="tigh">
   </div>
 </div>	
 <div class="form-group row">
-  <label for="example-number-input" class="col-xs-2 col-form-label" style="color:black">Length</label>
+  <label for="length" class="col-xs-2 col-form-label" style="color:black">Length</label>
   <div class="col-xs-10">
-    <input class="form-control" type="number" value="42" id="example-number-input">
+    <input class="form-control" type="number" value="42" id="length">
   </div>
 </div>			
 			</div>
@@ -384,9 +407,34 @@ jQuery(document).ready(function() {
           </div>
         </div>
       </div>            
-    </div>
   </section><!--/#team-->
+<script>
 
+function seatPlus() {
+	document.getElementById("seat").stepUp(1);
+}
+function seatMinus() {
+	document.getElementById("seat").stepDown(1);
+}
+function tighPlus() {
+    document.getElementById("tigh").stepUp(1);
+}
+function tighMinus() {
+    document.getElementById("tigh").stepDown(1);
+}
+function lengthPlus() {
+    document.getElementById("length").stepUp(1);
+}
+function lengthMinus() {
+    document.getElementById("length").stepDown(1);
+}
+function waistPlus() {
+    document.getElementById("waist").stepUp(1);
+}
+function waistMinus() {
+    document.getElementById("waist").stepDown(1);
+}
+</script>
   <section id="features" class="parallax">
     <div class="container">
       <div class="row count">
@@ -703,7 +751,7 @@ jQuery(document).ready(function() {
 
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+ <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>-->
   <script type="text/javascript" src="js/jquery.inview.min.js"></script>
   <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript" src="js/mousescroll.js"></script>
