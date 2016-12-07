@@ -348,54 +348,55 @@ jQuery(document).ready(function() {
               <div class="member-image">
 			  <div class="row">
 			  <div class="col-sm-1">			  
-					<p class="waist-measure" id="mens-bottom-waist" style="margin:0px; clear:both;">Waist</p>
+				<p class="waist-measure" id="mens-bottom-waist" style="margin:5px; clear:both;">Waist</p>
 			</div>		
 			<div class="col-sm-1">
-					<a class="waist-plus btn" onclick="waistPlus()">+</a>
+			<button type="button" class=" waist-plus btn btn-default btn-circle" onclick="waistPlus()"><i class="glyphicon glyphicon-plus-sign"></i></button>
 			</div>	
 			<div class="col-sm-3">
 			</div>
 			<div class="col-sm-1">			
-					<a class="waist-minus btn " onclick="waistMinus()">-</a>
+			<button type="button" class=" waist-minus btn btn-default btn-circle" onclick="waistMinus()"><i class="glyphicon glyphicon-minus-sign"></i></button>
 			</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-1">	 
-					<p class="seat-measure" id="mens-bottom-seat" style="margin:0px; clear:both;" >Seat</p>
+					<p class="seat-measure" id="mens-bottom-seat" style="margin:5px; clear:both;" >Seat</p>
 				</div>
 				<div class="col-sm-1">
-					<a class="seat-plus btn" onclick="seatPlus()">+</a>
+					<button type="button" class=" seat-plus btn btn-default btn-circle" onclick="seatPlus()"><i class="glyphicon glyphicon-plus-sign"></i></button>
 				</div>	
-			<div class="col-sm-1">
-			</div>
-			<div class="col-sm-2">
-			<a class="length-plus btn" onclick="lengthPlus()">+</a>
-			<p class="length-measure" id="mens-bottom-seat" >Length</p>
+			<div class="col-sm-3">
 			</div>
 			<div class="col-sm-1">	
-					<a class="seat-minus btn " onclick="seatMinus()">-</a>
+			<button type="button" class=" seat-minus btn btn-default btn-circle" onclick="seatMinus()"><i class="glyphicon glyphicon-minus-sign"></i></button>
 			</div>
 			</div>
-			<div class="row">
+			<div class="row" style="margin:5px; clear:both;">
 			<div class="col-sm-1">							  
-					<p class="tigh-measure" id="mens-bottom-seat" >Tigh</p>
+					<p class="tigh-measure" id="mens-bottom-seat" style="margin-left:5px; margin-top:7px; clear:both;" >Tigh</p>
 			</div>
 			<div class="col-sm-1">
-					<a class="tigh-plus btn" onclick="tighPlus()">+</a>
+				<button type="button" class=" tigh-plus btn btn-default btn-circle" onclick="tighPlus()"><i class="glyphicon glyphicon-plus-sign"></i></button>
 			</div>
 			<div class="col-sm-1">
 			</div>			
 			<div class="col-sm-1">
-					<a class="tigh-minus btn " onclick="tighMinus()">-</a>
+				<button type="button" class=" tigh-minus btn btn-default btn-circle" onclick="tighMinus()"><i class="glyphicon glyphicon-minus-sign"></i></button>
 			</div>
 			</div>
 
 			<div class="row">
 			
-			<div class="col-sm-3">	
-			</div>		
-			<div class="col-sm-1">		
-				<a class="length-minus btn " onclick="lengthMinus()">-</a>
+			<div class="col-sm-2">	
+			</div>	
+			<div class="col-sm-1">	
+			<p class="length-measure" id="mens-bottom-seat" >Length</p>
+			</div>					
+			<div class="col-sm-1">	
+				<button type="button" class=" length-plus btn btn-default btn-circle" onclick="lengthPlus()"><i class="glyphicon glyphicon-plus-sign"></i></button>
+							
+				<button type="button" class=" tigh-minus btn btn-default btn-circle" onclick="lengthMinus()" style="margin-top:30%; margin-bottom:0px;"><i class="glyphicon glyphicon-minus-sign"></i></button>
 			</div>
 			</div>
 			</div>
@@ -776,7 +777,7 @@ function waistMinus() {
 
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
- <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>-->
+ <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
   <script type="text/javascript" src="js/jquery.inview.min.js"></script>
   <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript" src="js/mousescroll.js"></script>
