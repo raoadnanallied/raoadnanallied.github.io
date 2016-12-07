@@ -343,45 +343,70 @@ jQuery(document).ready(function() {
       <div class="size-measure">
         <div class="row">
           <div class="col-sm-6">
+
             <div class="size-measure wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
               <div class="member-image">
-			  <div class="col-sm-3">
-				<div class="waist" >			  
-					<p class="waist-measure" id="mens-bottom-waist" >Waist</p>
+			  <div class="row">
+			  <div class="col-sm-1">			  
+					<p class="waist-measure" id="mens-bottom-waist" style="margin:0px; clear:both;">Waist</p>
+			</div>		
+			<div class="col-sm-1">
 					<a class="waist-plus btn" onclick="waistPlus()">+</a>
+			</div>	
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-1">			
 					<a class="waist-minus btn " onclick="waistMinus()">-</a>
-				</div>
 			</div>
-			<div class="col-sm-3">
-				<div class="seat" >			  
-					<p class="seat-measure" id="mens-bottom-seat" >Seat</p>
+			</div>
+			<div class="row">
+				<div class="col-sm-1">	 
+					<p class="seat-measure" id="mens-bottom-seat" style="margin:0px; clear:both;" >Seat</p>
+				</div>
+				<div class="col-sm-1">
 					<a class="seat-plus btn" onclick="seatPlus()">+</a>
+				</div>	
+			<div class="col-sm-1">
+			</div>
+			<div class="col-sm-2">
+			<a class="length-plus btn" onclick="lengthPlus()">+</a>
+			<p class="length-measure" id="mens-bottom-seat" >Length</p>
+			</div>
+			<div class="col-sm-1">	
 					<a class="seat-minus btn " onclick="seatMinus()">-</a>
-				</div>
 			</div>
-			<div class="col-sm-3">
-				<div class="tigh" >			  
+			</div>
+			<div class="row">
+			<div class="col-sm-1">							  
 					<p class="tigh-measure" id="mens-bottom-seat" >Tigh</p>
+			</div>
+			<div class="col-sm-1">
 					<a class="tigh-plus btn" onclick="tighPlus()">+</a>
+			</div>
+			<div class="col-sm-1">
+			</div>			
+			<div class="col-sm-1">
 					<a class="tigh-minus btn " onclick="tighMinus()">-</a>
-				</div>
 			</div>
-			<div class="col-sm-3">
-				<div class="length">			  
-					<p class="length-measure" id="mens-bottom-seat" >Length</p>
-					<a class="length-plus btn" onclick="lengthPlus()">+</a>
-					<a class="length-minus btn " onclick="lengthMinus()">-</a>
-				</div>
 			</div>
-			   </div>
+
+			<div class="row">
+			
+			<div class="col-sm-3">	
+			</div>		
+			<div class="col-sm-1">		
+				<a class="length-minus btn " onclick="lengthMinus()">-</a>
 			</div>
-		</div>
+			</div>
+			</div>
+			</div>
+			</div>
 		<div class="col-sm-3">
             <div class="size-measure wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">            
 <div class="form-group row">
   <label for="waist" class="col-xs-2 col-form-label" style="color:black">Waist</label>
   <div class="col-xs-10">
-    <input class="form-control" type="number" value="42" id="waist">
+    <input class="form-control" type="number" value="32" id="waist">
   </div>
 </div>
 <div class="form-group row">
