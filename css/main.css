@@ -842,34 +842,12 @@ p.seat-measure
 	  margin-left:6%;
 	display: inline-block;
 }
-a.seat-plus
-{
-	font-size: 30px;
-	color: #fff;
-}
-a.seat-minus
-{
-	font-size: 30px;
-	margin-left:16%;
-	color:#fff;
-}
 p.tigh-measure
 {
 	  margin-top:0%;
 	  margin-bottom:90%;
 	  margin-left:6%;
 	display: inline-block;
-}
-a.tigh-plus
-{
-	font-size: 30px;
-	color: #fff;
-}
-a.tigh-minus
-{
-	font-size: 30px;
-	margin-left:16%;
-	color:#fff;
 }
 p.length-measure
 {
@@ -878,16 +856,15 @@ p.length-measure
 	  margin-left:6%;
 	display: inline-block;
 }
-a.length-plus
-{
-	font-size: 30px;
-	color: #fff;
-}
-a.length-minus
-{
-	font-size: 30px;
-	margin-left:16%;
-	color:#fff;
+.btn-circle {
+	color:red;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 50%;
 }
 .size-measure {
   color: #fff;
