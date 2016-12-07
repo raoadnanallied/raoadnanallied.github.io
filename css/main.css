@@ -857,14 +857,16 @@ p.length-measure
 	display: inline-block;
 }
 .btn-circle {
-	color:red;
+color:white;
   width: 25px;
   height: 25px;
-  text-align: center;
-  padding: 6px 0;
+  //text-align: center;
+  padding: 4px 5px 5px 5px;
   font-size: 12px;
-  line-height: 1.428571429;
+  //line-height: 1.428571429;
   border-radius: 50%;
+  border:1px solid white;
+  background-color: transparent;
 }
 .size-measure {
   color: #fff;
